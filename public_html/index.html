@@ -4,35 +4,35 @@
     <head>
         <title>Native SVG test</title>
         <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/jquery.zoomooz.min.js"></script>
-		
-		<script type="text/javascript">
-            $(document).ready(function() {
-                $('#container').click(function(evt) {
-                	evt.stopPropagation();
-                	$(this).zoomTo({duration:1000, targetsize:1.0});
+        <script type="text/javascript" src="js/jquery.zoomooz.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#container').click(function (evt) {
+                    evt.stopPropagation();
+                    $(this).zoomTo({duration: 1000, targetsize: 1.0});
                 });
-                $('.label').click(function(evt) {
-                	evt.stopPropagation();
-                	$(this).zoomTo({duration:1000, targetsize:0.6});
+                $('.label').click(function (evt) {
+                    evt.stopPropagation();
+                    $(this).zoomTo({duration: 1000, targetsize: 0.6});
                 });
             });
         </script>
     </head>
     <body>
-    	<div id="container">
-			<div id="content">
-				<object class="tree" data="image/resilience_dummy.svg" width="720" height="720" type="image/svg+xml" >
-				    <embed class="tree" src="image/resilience_dummy.svg" width="720" height="720" type="image/svg+xml" />
-				</object>
-				<div class="label" id="label1">
-					An apple does not fall far from the tree.
-				</div>
-				<div class="label" id="label2">
-					Who reaches for the spruce, falls down onto the juniper.
-				</div>
-			</div>
+        <div id="container">
+            <div id="content">
+                <object class="tree" data="image/resilience_dummy.svg" type="image/svg+xml" >
+                    <embed class="tree" src="image/resilience_dummy.svg" type="image/svg+xml" />
+                </object>
+                <div class="label" id="folie1">
+                    FOLIE 1
+                </div>
+                <div class="label" id="folie2">
+                    FOLIE 2
+                </div>
+            </div>
         </div>
     </body>

@@ -5,15 +5,16 @@
     background-color:white;
 }
             
-#label1 {
-    left:160px;
-    top:105px;
-    width:90px;
-    -webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
+#folie1 {
+    left:520px;
+    top:930px;
+    width:130px;
+    height: 60px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
 }
 
-#label2 {
+#folie2 {
     left:460px;
     top:285px;
     width:150px;
@@ -28,6 +29,7 @@ div.label {
     line-height: 14px;
     position: absolute;
     color:#aaa;
+    border: 1px solid red;
     -webkit-user-select:none;
 	-moz-user-select:none;
 }
