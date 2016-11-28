@@ -4,7 +4,7 @@
     overflow:hidden;
     background-color:white;
 }
-            
+
 #folie1 {
     left:520px;
     top:930px;
@@ -43,7 +43,7 @@ div.label {
     color:#aaa;
     border: 1px solid red;
     -webkit-user-select:none;
-	-moz-user-select:none;
+    -moz-user-select:none;
 }
 
 div.label:hover {
@@ -53,13 +53,54 @@ div.label:hover {
 }
 
 .tree {
-     pointer-events: none;
+    pointer-events: none;
 }
 
 #content {
     position:relative;
-    margin-top:0;
+    margin-top:0px;
     margin-left:auto;
     margin-right:auto;
     width:750px;
+}
+
+
+/* navigation */
+
+#navigation {
+    width:750px;
+    position:relative;
+    margin-top:2em;
+    margin-left:auto;
+    margin-right:auto;
+    height:50px;
+}
+
+#prev, #next {
+    position:absolute;
+    width:50px;
+    height:50px;
+    border:1px solid #aaa;
+    background-color:#dca;
+    color:white;
+    z-index:10;
+    font-size:40px;
+    line-height:45px;
+    text-align:center;
+    font-family:Helvetica, sans-serif;
+    cursor:pointer;
+    cursor:hand;
+}
+
+#prev {
+    left:0px;
+}
+
+#next {
+    right:0px;
+}
+
+#prev:hover,#next:hover {
+	background-color:#ba9;
+	border: 1px solid #999;
 }
