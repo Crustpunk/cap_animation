@@ -15,12 +15,24 @@
 }
 
 #folie2 {
-    left:460px;
-    top:285px;
-    width:150px;
-    -webkit-transform: rotate(-15deg);
-    -moz-transform: rotate(-15deg);
+    left:470px;
+    top:730px;
+    width:200px;
+    height: 100px;  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
 }
+
+#folie3 {
+    left:365px;
+    top:840px;
+    width:100px;
+    height:80px;  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+
+
 
 div.label {
     padding:10px;
