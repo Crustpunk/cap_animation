@@ -147,7 +147,63 @@
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
 }
-#folie18 {
+#folie18 { /* 4.1*/
+    left:485px;
+    top:205px;
+    width:220px;
+    height:130px;  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+#folie19 { /* 4.2*/
+    left:485px;
+    top:470px;
+    width:220px;
+    height:110px;  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+#folie20 { /* 5*/
+    left:25px;
+    top:830px;
+    width:160px;
+    height:190px;  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+#folie21 { /* 6*/
+    left:25px;
+    top:520px;
+    width:220px;
+    height:120px;  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+#folie22 { /* 7*/
+    left:490px;
+    top:870px;
+    width:220px;
+    height:150px;  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+#folie23 { /* 8*/
+    left:230px;
+    top:890px;
+    width:220px;
+    height:130px;  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+/* kann weg ? 
+#folie 2.12 {
     left:180px;
     top:310px;
     width:350px;
@@ -155,6 +211,7 @@
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
 }
+*/
 
 
 div.label {
