@@ -147,7 +147,14 @@
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
 }
-
+#folie18 {
+    left:180px;
+    top:310px;
+    width:350px;
+    height:420px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
 
 
 div.label {
@@ -178,45 +185,4 @@ div.label:hover {
     margin-left:auto;
     margin-right:auto;
     width:750px;
-}
-
-
-/* navigation */
-
-#navigation {
-    width:750px;
-    position:relative;
-    margin-top:2em;
-    margin-left:auto;
-    margin-right:auto;
-    height:50px;
-}
-
-#prev, #next {
-    position:absolute;
-    width:50px;
-    height:50px;
-    border:1px solid #aaa;
-    background-color:#dca;
-    color:white;
-    z-index:10;
-    font-size:40px;
-    line-height:45px;
-    text-align:center;
-    font-family:Helvetica, sans-serif;
-    cursor:pointer;
-    /*cursor:hand;*/
-}
-
-#prev {
-    left:0px;
-}
-
-#next {
-    right:0px;
-}
-
-#prev:hover,#next:hover {
-    background-color:#ba9;
-    border: 1px solid #999;
 }
