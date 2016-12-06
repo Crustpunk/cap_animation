@@ -9,15 +9,51 @@
         <script type="text/javascript" src="js/jquery.zoomooz.min.js"></script>
 
         <script type="text/javascript">
-            $(document).ready(function () {
-                $('#container').click(function (evt) {
-                    evt.stopPropagation();
-                    $(this).zoomTo({duration: 1000, targetsize: 1.0});
-                });
-                $('.label').click(function (evt) {
-                    evt.stopPropagation();
-                    $(this).zoomTo({duration: 1000, targetsize: 0.8});
-                });
+
+            var slideStart = 0;
+            /*nur benötigt beim reinklicken*/
+            /* 
+             $(document).ready(function () {
+             $('#container').click(function (evt) {
+             evt.stopPropagation();
+             $(this).zoomTo({duration: 500, targetsize: 1.0});
+             });
+             $('.label').click(function (evt) {
+             evt.stopPropagation();
+             $(this).zoomTo({duration: 500, targetsize: 0.9});
+             });
+             });
+             */
+
+            $(window).on('keydown', function (e) {
+
+                console.log(slideStart);
+
+
+
+                if (e.keyCode === 34) { /* vorwärts*/
+                    if (slideStart < 23) {
+                        slideStart++;
+                    }
+                    var slide = $("#folie" + slideStart);
+                    e.stopPropagation();
+                    slide.zoomTo({duration: 500, targetsize: 0.9});
+
+                }
+                if (e.keyCode === 33) { /* rückwärts */
+                    if (slideStart >= 1) {
+                        slideStart--;
+                    }
+                    var slide = $("#folie" + slideStart);
+                    e.stopPropagation();
+
+                    if (slideStart === 0) { /* soll dasa gesamte poster wieder anzeigen */
+                        $("#container").zoomTo({duration: 500, targetsize: 1.0})
+                        //slideStart = 1;
+                    } else {
+                        slide.zoomTo({duration: 500, targetsize: 0.9});
+                    }
+                }
             });
         </script>
     </head>
