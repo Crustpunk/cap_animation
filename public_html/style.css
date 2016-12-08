@@ -221,7 +221,7 @@ div.label {
     line-height: 14px;
     position: absolute;
     color:#aaa;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     -webkit-user-select:none;
     -moz-user-select:none;
 }
