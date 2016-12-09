@@ -34,6 +34,9 @@
                 if (e.keyCode === 34) { /* vorwärts*/
                     if (slideStart < 23) {
                         slideStart++;
+                    } else { //wir sind am ende und wollen das finale poster wieder anzeigen
+                        $("#container").zoomTo({duration: 500, targetsize: 1.0});
+                        slideStart = 0;
                     }
                     var slide = $("#folie" + slideStart);
                     e.stopPropagation();
@@ -48,7 +51,7 @@
                     e.stopPropagation();
 
                     if (slideStart === 0) { /* soll dasa gesamte poster wieder anzeigen */
-                        $("#container").zoomTo({duration: 500, targetsize: 1.0})
+                        $("#container").zoomTo({duration: 500, targetsize: 1.0});
                         //slideStart = 1;
                     } else {
                         slide.zoomTo({duration: 500, targetsize: 0.9});
