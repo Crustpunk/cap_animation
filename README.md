@@ -1,3 +1,3 @@
-# cap_atalk
+# cap_talk
 
 Just run index.html
