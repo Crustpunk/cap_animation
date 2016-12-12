@@ -1,6 +1,3 @@
-# cap_animation
+# cap_talk
 
-Edit style.css for more Slides and their Positions 
-
-TODO: Slide Notices like impress.js
-TODO: all slides
+Just run index.html
